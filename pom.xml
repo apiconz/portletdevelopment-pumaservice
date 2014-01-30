@@ -8,7 +8,22 @@
 	<name>Puma Service Portlet Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-	
+
+		<!-- Dependencias que manualmente agregamos al repositorio local -->
+		<dependency>
+			<groupId>com.ibm</groupId>
+			<artifactId>public-spi</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency> 
+			<groupId>com.ibm</groupId>
+			<artifactId>wp.user.api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- Esta dependencia es solo para la etapa de pruebas -->
 		<dependency>
 			<groupId>junit</groupId>
